@@ -17,6 +17,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 120px;
+    border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 header h2{
@@ -24,15 +25,207 @@ header h2{
 }
 
 header nav a{
-    color: #777777;
+    color: #4d4c4cae;
     font-size: 16px;
-    transition: .3s;
-}
-
-heafer nav a:first-of-type{
-    margin-right: 20px;
+    transition: .3;
 }
 
 header nav a:hover {
-    color: #C47A3A;
+    color: rgb(187, 127, 16);
+}
+
+header nav a:first-of-type{
+    margin-right: 20px;
+}
+
+#banner {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.474), rgba(0, 0, 0, 0.205)) ,url('../imagens/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+}
+
+#banner div {
+    color: white;
+}
+
+#banner h1 {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+#banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#banner a {
+    display: flex;
+    width: 180px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(209, 145, 27);
+    transition: .3s;
+}
+
+#banner a:hover {
+    background-color: rgb(148, 101, 12);
+}
+
+
+#destaques {
+    text-align: center;
+    padding: 100px 120px;
+    background-color: rgb(251, 250, 247);
+}
+
+#destaques h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: rgb(123, 123, 123);
+}
+
+.produtos {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.card {
+    width: 370px;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card .detalhes {
+    margin: 10px 0;
+}
+
+.detalhes .tag {
+    text-transform: uppercase;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+}
+
+.detalhes h3 {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.descricao {
+    color: rgb(121, 119, 119);
+    font-size: 14px;
+}
+
+.comprar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comprar p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.comprar button {
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(187, 129, 21);
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+
+.comprar button:hover {
+    background-color: rgb(233, 160, 25);
+}
+
+.cta-ver-todos {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background-color: white;
+    color: rgb(15, 15, 15);
+    transition: .3s;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.cta-ver-todos:hover {
+    background-color: rgb(238, 238, 238)
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid rgb(218, 213, 213);
+    background-color: rgb(254, 249, 240);
+}
+
+footer h2 {
+    font-size: 22px;
+}
+
+footer p {
+    color: rgb(133, 133, 133);
+}
+
+footer p:not(.copyright){
+    margin: 15px 0 20px 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* Produto */
+
+#main-produto {
+    padding: 50px 120px;
+}
+
+#main-produto h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.botoes {
+    margin: 40px 0;
+}
+
+.tag-produto {
+    background-color: white;
+    border: 1px solid rgb(215, 215, 215);
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
 }
