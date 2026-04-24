@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Essenza | Produtos</title>
+    <link rel="stylesheet" href="../Essenza/assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h2>Essenza</h2>
+
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./produtos.html">Produtos</a>
+        </nav>
+    </header>
+
+    <main id="main-produto">
+        <h1>Produtos</h1>
+        <p class="subtitulo">Explore toda a nossa coleção</p>
+
+        <div>
+            <button class="tag-produto"></button>
+            <button class="tag-produto"></button>
+            <button class="tag-produto"></button>
+            <button class="tag-produto"></button>
+        </div>
+
+        <div class="produtos">
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>Essenza</h2>
+        <p>Produtos com design e qualidade para o seu dia a dia.</p>
+        <p class="copyright">&copy; 2026 Essenza. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="./data.js"></script>
+    <script type="module">
+        import { produtos } from './data.js'
+
+        const container = document.querySelector(".produtos")
+        for (let item of produtos) {
+            container.innerHTML += `
+                <div class="card">
+                    <img src="${item.img}" alt="${item.nome}">
+                    <div class="detalhes">
+                        <div class="detalhes-texto">
+                            <p class="tag">${item.tag}</p>
+                            <h3>${item.nome}</h3>
+                            <p class="descricao">
+                                ${item.descricao}
+                            </p>
+                        </div>
+                        <div class="comprar">
+                            <p class="preco">R$ ${item.preco.toFixed(2)}</p>
+                            <button>Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+
+    </script>
 </body>
+
 </html>
