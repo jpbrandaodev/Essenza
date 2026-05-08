@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,11 +20,11 @@ header{
     border-bottom: 1px solid rgb(223, 223, 223);
 }
 
-header h2{
+header h2 {
     font-size: 20px;
 }
 
-header nav a{
+header nav a {
     color: #4d4c4cae;
     font-size: 16px;
     transition: .3;
@@ -34,12 +34,12 @@ header nav a:hover {
     color: rgb(187, 127, 16);
 }
 
-header nav a:first-of-type{
+header nav a:first-of-type {
     margin-right: 20px;
 }
 
 #banner {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.474), rgba(0, 0, 0, 0.205)) ,url('../imagens/banner.jpeg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.474), rgba(0, 0, 0, 0.205)), url('../images/banner.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -199,7 +199,7 @@ footer p {
     color: rgb(133, 133, 133);
 }
 
-footer p:not(.copyright){
+footer p:not(.copyright) {
     margin: 15px 0 20px 0;
 }
 
@@ -228,4 +228,23 @@ footer p:not(.copyright){
     padding: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    #banner {
+        padding: 0 20px;
+    }
+
+    #destaques {
+        padding: 100px 10px;
+    }
+
+    #main-produto {
+        padding: 50px 10px;
+    }
 }
